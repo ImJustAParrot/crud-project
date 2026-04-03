@@ -1,5 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
+import logo from "../image/logo.png";
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -30,11 +31,18 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="nav-container">
-                <button className="logo" onClick={(e) => {
-                    e.preventDefault();
-                    navigate("/");
-                    closeMenu();
-                }}>E-Commerce Clients</button>
+                <div className="logo-container">
+                    <img 
+                        src={logo} 
+                        alt="Logo" 
+                        className="nav-logo"
+                    />
+                    <button className="logo" onClick={(e) => {
+                        e.preventDefault();
+                        navigate("/");
+                        closeMenu();
+                    }}>Client Management</button>
+                </div>
 
                 <button
                     className="menu-button"

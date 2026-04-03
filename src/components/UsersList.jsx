@@ -1,4 +1,3 @@
-// components/UsersList.jsx
 import { UsersItem } from "./UsersItem";
 import { useState } from "react";
 
@@ -20,10 +19,6 @@ export const UsersList = ({ users, deleteUser, toggleUserStatus }) => {
 
     return (
         <div>
-            <h1 className="users-title user-list">
-                CLIENTS LIST
-            </h1>
-
             <div className="stats-container">
                 <div className="stat-card total">
                     <div className="stat-icon">👥</div>
